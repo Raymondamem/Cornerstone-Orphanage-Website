@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///home/raymond-amem-aondoakura/Documents/softwares_I/web2_I/Cornerstone-Orphanage-Website/app/gallery/page.tsx"],"sourcesContent":["export default function GalleryPage() {\n  const images = [\n    \"/figmaAssets/image-10.png\",\n    \"/figmaAssets/image-3.png\",\n    \"/figmaAssets/image-9.png\",\n    \"/figmaAssets/group-2.png\",\n  ]\n  return (\n    <div className=\"min-h-screen bg-[#fffdf7]\">\n      <main className=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12\">\n        <h1 className=\"text-4xl font-bold text-[#0b1f33] mb-6\">Gallery</h1>\n        <div className=\"grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6\">\n          {images.map((src) => (\n            <img key={src} src={src} alt=\"Gallery\" className=\"w-full h-64 object-cover rounded-lg\" />\n          ))}\n        </div>\n      </main>\n    </div>\n  )\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,MAAM,SAAS;QACb;QACA;QACA;QACA;KACD;IACD,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YAAK,WAAU;;8BACd,8OAAC;oBAAG,WAAU;8BAAyC;;;;;;8BACvD,8OAAC;oBAAI,WAAU;8BACZ,OAAO,GAAG,CAAC,CAAC,oBACX,8OAAC;4BAAc,KAAK;4BAAK,KAAI;4BAAU,WAAU;2BAAvC;;;;;;;;;;;;;;;;;;;;;AAMtB","debugId":null}}]
+}

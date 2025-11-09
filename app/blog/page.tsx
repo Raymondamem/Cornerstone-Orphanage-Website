@@ -1,67 +1,49 @@
+'use client'
+
+import { useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Navbar } from '../components/Navbar'
-import Image from 'next/image'
+import Link from 'next/link'
 
-// Mock blog data
-const latestPosts = [
-  {
-    id: 1,
-    title: "ORC Visit",
-    description: "Cornerstone Orphanage was founded in1999, by Mr. and Mrs. Joel Jijingi, in the heart of Yelwa Kagadama, Bauchi, with a vision to provide love, care, and support to children in need.Cornerstone Orphanage was founded in1999, by Mr. and Mrs. Joel Jijingi, in the heart of Yelwa Kagadama ...",
-    image: "/figmaAssets/image-10.png",
-    category: "Visit"
-  },
-  {
-    id: 2,
-    title: "ORC Visit",
-    description: "Cornerstone Orphanage was founded in1999, by Mr. and Mrs. Joel Jijingi, in the heart of Yelwa Kagadama, Bauchi, with a vision to provide love, care, and support to children in need.Cornerstone Orphanage was founded in1999, by Mr. and Mrs. Joel Jijingi, in the heart of Yelwa Kagadama ...",
-    image: "/figmaAssets/image-3.png",
-    category: "Visit"
-  },
-  {
-    id: 3,
-    title: "ORC Visit", 
-    description: "Cornerstone Orphanage was founded in1999, by Mr. and Mrs. Joel Jijingi, in the heart of Yelwa Kagadama, Bauchi, with a vision to provide love, care, and support to children in need.Cornerstone Orphanage was founded in1999, by Mr. and Mrs. Joel Jijingi, in the heart of Yelwa Kagadama ...",
-    image: "/figmaAssets/image-9.png",
-    category: "Visit"
-  }
-]
-
-const articleOfTheDay = {
-  title: "ORC Visit",
-  description: "Cornerstone Orphanage was founded in1999, by Mr. and Mrs. Joel Jiingi, in the heart of Yelwa Kagadama, Bauchi, with a vision to provide love, care, and support to children in need.Cornerstone Orphanage was founded in1999, by Mr. and Mrs. Joel Jiingi, in the heart of Yelwa Kagadama, Bauchi, with a vision to provide love, care, and support to children in need.Cornerstone Orphanage was founded in1999, by Mr. and Mrs. Joel Jiingi, in the heart of Yelwa Kagadama, Bauchi, with a vision to provide love, care, and support to children in need.Cornerstone Orphanage was founded in1999, by Mr. and Mrs. Joel Jiingi, in the heart of Yelwa Kagadama, Bauchi, with a vision to provide love, care, and support to children in need.Cornerstone Orphanage was founded in1999, by Mr. and Mrs. Joel Jiingi, in the heart of Yelwa Kagadama, Bauchi, with a vision to provide love, care, and support to children in need",
-  image: "/figmaAssets/image-10.png"
+interface Blog {
+  _id: string
+  title: string
+  description: string
+  featuredImage?: string
+  category?: string
+  createdAt: string
 }
 
-const lastMonthPosts = [
-  {
-    id: 4,
-    title: "ORC Visit",
-    description: "Cornerstone Orphanage was founded in1999, by Mr. and Mrs. Joel Jijingi, in the heart of Yelwa Kagadama, Bauchi, with a vision to provide love, care, and support to children in need.Cornerstone Orphanage was founded in1999, by Mr. and Mrs. Joel Jijingi, in the heart of Yelwa Kagadama ...",
-    image: "/figmaAssets/image-10.png",
-    category: "Visit"
-  },
-  {
-    id: 5,
-    title: "ORC Visit",
-    description: "Cornerstone Orphanage was founded in1999, by Mr. and Mrs. Joel Jijingi, in the heart of Yelwa Kagadama, Bauchi, with a vision to provide love, care, and support to children in need.Cornerstone Orphanage was founded in1999, by Mr. and Mrs. Joel Jijingi, in the heart of Yelwa Kagadama ...",
-    image: "/figmaAssets/image-3.png",
-    category: "Visit"
-  },
-  {
-    id: 6,
-    title: "ORC Visit",
-    description: "Cornerstone Orphanage was founded in1999, by Mr. and Mrs. Joel Jijingi, in the heart of Yelwa Kagadama, Bauchi, with a vision to provide love, care, and support to children in need.Cornerstone Orphanage was founded in1999, by Mr. and Mrs. Joel Jijingi, in the heart of Yelwa Kagadama ...",
-    image: "/figmaAssets/image-9.png",
-    category: "Visit"
-  }
-]
-
 export default function BlogPage() {
+  const [latestPosts, setLatestPosts] = useState<Blog[]>([])
+  const [lastMonthPosts, setLastMonthPosts] = useState<Blog[]>([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    fetchBlogs()
+  }, [])
+
+  const fetchBlogs = async () => {
+    try {
+      const [latestRes, lastMonthRes] = await Promise.all([
+        fetch('/api/blogs?filter=latest'),
+        fetch('/api/blogs?filter=lastMonth'),
+      ])
+
+      if (latestRes.ok) setLatestPosts(await latestRes.json())
+      if (lastMonthRes.ok) setLastMonthPosts(await lastMonthRes.json())
+    } catch (error) {
+      console.error('Error fetching blogs:', error)
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  const articleOfTheDay = latestPosts[0]
+
   return (
     <div className="min-h-screen bg-[#fffdf7]">
-      {/* Header Navigation */}
       <Navbar />
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
@@ -70,73 +52,15 @@ export default function BlogPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0b1f33] mb-8 sm:mb-12 [font-family:'Archivo',Helvetica]">
             Latest
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {latestPosts.map((post) => (
-              <Card key={post.id} className="overflow-hidden bg-white shadow-lg hover:shadow-xl transition-shadow">
-                <div className="aspect-[4/3] relative">
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <CardContent className="p-4 sm:p-6">
-                  <h3 className="text-xl sm:text-2xl font-bold text-[#0b1f33] mb-3 [font-family:'Archivo',Helvetica]">
-                    {post.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-4 line-clamp-4">
-                    {post.description}
-                  </p>
-                  <Button className="bg-[#164672] hover:bg-[#164672]/90 text-white rounded-full px-6 py-2">
-                    Read more
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
-
-        {/* Article of the Day Section */}
-        <section className="mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0b1f33] mb-8 sm:mb-12 [font-family:'Archivo',Helvetica]">
-            Article of the day
-          </h2>
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="flex flex-col lg:flex-row">
-              <div className="lg:w-1/3">
-                <img
-                  src={articleOfTheDay.image}
-                  alt={articleOfTheDay.title}
-                  className="w-full h-64 lg:h-full object-cover"
-                />
-              </div>
-              <div className="lg:w-2/3 p-6 sm:p-8 lg:p-12">
-                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#164672] mb-4 sm:mb-6 [font-family:'Archivo',Helvetica]">
-                  {articleOfTheDay.title}
-                </h3>
-                <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8">
-                  {articleOfTheDay.description}
-                </p>
-                <Button className="bg-[#164672] hover:bg-[#164672]/90 text-white rounded-full px-8 py-3">
-                  Read more
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Last Month Section */}
-        <section className="mb-12 sm:mb-16">
-          <div className="border-2 border-[#164672] rounded-lg p-6 sm:p-8">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#164672] mb-8 sm:mb-12 [font-family:'Archivo',Helvetica]">
-              Last month
-            </h2>
+          {loading ? (
+            <div className="text-gray-600">Loading...</div>
+          ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-              {lastMonthPosts.map((post) => (
-                <Card key={post.id} className="overflow-hidden bg-white shadow-lg hover:shadow-xl transition-shadow">
+              {latestPosts.map((post) => (
+                <Card key={post._id} className="overflow-hidden bg-white shadow-lg hover:shadow-xl transition-shadow">
                   <div className="aspect-[4/3] relative">
                     <img
-                      src={post.image}
+                      src={post.featuredImage || '/figmaAssets/image-10.png'}
                       alt={post.title}
                       className="w-full h-full object-cover"
                     />
@@ -148,13 +72,87 @@ export default function BlogPage() {
                     <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-4 line-clamp-4">
                       {post.description}
                     </p>
-                    <Button className="bg-[#164672] hover:bg-[#164672]/90 text-white rounded-full px-6 py-2">
-                      Read more
-                    </Button>
+                    <Link href={`/blog/${post._id}`}>
+                      <Button className="bg-[#164672] hover:bg-[#164672]/90 text-white rounded-full px-6 py-2">
+                        Read more
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
               ))}
             </div>
+          )}
+        </section>
+
+        {/* Article of the Day Section */}
+        {articleOfTheDay && (
+          <section className="mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0b1f33] mb-8 sm:mb-12 [font-family:'Archivo',Helvetica]">
+              Article of the day
+            </h2>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="flex flex-col lg:flex-row">
+                <div className="lg:w-1/3">
+                  <img
+                    src={articleOfTheDay.featuredImage || '/figmaAssets/image-10.png'}
+                    alt={articleOfTheDay.title}
+                    className="w-full h-64 lg:h-full object-cover"
+                  />
+                </div>
+                <div className="lg:w-2/3 p-6 sm:p-8 lg:p-12">
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#164672] mb-4 sm:mb-6 [font-family:'Archivo',Helvetica]">
+                    {articleOfTheDay.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8">
+                    {articleOfTheDay.description}
+                  </p>
+                  <Link href={`/blog/${articleOfTheDay._id}`}>
+                    <Button className="bg-[#164672] hover:bg-[#164672]/90 text-white rounded-full px-8 py-3">
+                      Read more
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Last Month Section */}
+        <section className="mb-12 sm:mb-16">
+          <div className="border-2 border-[#164672] rounded-lg p-6 sm:p-8">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#164672] mb-8 sm:mb-12 [font-family:'Archivo',Helvetica]">
+              Last month
+            </h2>
+            {loading ? (
+              <div className="text-gray-600">Loading...</div>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                {lastMonthPosts.map((post) => (
+                  <Card key={post._id} className="overflow-hidden bg-white shadow-lg hover:shadow-xl transition-shadow">
+                    <div className="aspect-[4/3] relative">
+                      <img
+                        src={post.featuredImage || '/figmaAssets/image-3.png'}
+                        alt={post.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <CardContent className="p-4 sm:p-6">
+                      <h3 className="text-xl sm:text-2xl font-bold text-[#0b1f33] mb-3 [font-family:'Archivo',Helvetica]">
+                        {post.title}
+                      </h3>
+                      <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-4 line-clamp-4">
+                        {post.description}
+                      </p>
+                      <Link href={`/blog/${post._id}`}>
+                        <Button className="bg-[#164672] hover:bg-[#164672]/90 text-white rounded-full px-6 py-2">
+                          Read more
+                        </Button>
+                      </Link>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            )}
           </div>
         </section>
 

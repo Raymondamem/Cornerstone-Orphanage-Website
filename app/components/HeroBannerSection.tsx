@@ -1,6 +1,5 @@
 "use client";
 
-<<<<<<< HEAD
 import { Button } from "@/components/ui/button";
 
 const navigationItems = [
@@ -8,15 +7,10 @@ const navigationItems = [
   { label: "About us", active: false },
   { label: "Contact us", active: false },
 ];
-=======
-import { Button } from '@/components/ui/button'
-import { Navbar } from './Navbar'
->>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
 
 export function HeroBannerSection() {
   return (
     <section className="relative w-full bg-[#fffdf7]">
-<<<<<<< HEAD
       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
         {/* Mobile Header */}
         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
@@ -97,9 +91,6 @@ export function HeroBannerSection() {
           </div>
         </nav>
       </header>
-=======
-      <Navbar />
->>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
 
       <div className="flex items-center justify-center px-4 sm:px-6 lg:px-4 py-10 sm:py-14 lg:py-20">
         <div className="flex flex-col lg:flex-row w-full max-w-[1298px] items-center justify-between gap-6 sm:gap-8 lg:gap-8">

@@ -37,11 +37,13 @@ const HeroBannerSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$no
     throw new Error("Attempted to call HeroBannerSection() from the server but HeroBannerSection is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
 }, "[project]/app/components/HeroBannerSection.tsx", "HeroBannerSection");
 }),
-"[project]/app/components/HeroBannerSection.tsx [app-rsc] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/app/components/HeroBannerSection.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
 
-const e = new Error("Could not parse module '[project]/app/components/HeroBannerSection.tsx'\n\nMerge conflict marker encountered.");
-e.code = 'MODULE_UNPARSABLE';
-throw e;
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$HeroBannerSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/app/components/HeroBannerSection.tsx [app-rsc] (client reference proxy) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$HeroBannerSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__ = __turbopack_context__.i("[project]/app/components/HeroBannerSection.tsx [app-rsc] (client reference proxy)");
+;
+__turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$HeroBannerSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__);
 }),
 "[project]/app/components/AboutUsSection.tsx [app-rsc] (client reference proxy) <module evaluation>", ((__turbopack_context__) => {
 "use strict";

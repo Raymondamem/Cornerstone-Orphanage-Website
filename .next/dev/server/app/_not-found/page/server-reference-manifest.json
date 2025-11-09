@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "node": {
     "7f8f9eb3ad93b1b6ba2c05f72dc7b0c60edbb04cf8": {
       "workers": {
@@ -107,8 +106,5 @@
       "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
     }
   },
-=======
-  "node": {},
->>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
   "edge": {}
 }

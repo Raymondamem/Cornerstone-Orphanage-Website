@@ -31,14 +31,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      signInUrl="/admin/signin"
+      signUpUrl="/admin/signin"
+      afterSignInUrl="/admin/blogs"
+      afterSignUpUrl="/admin/blogs"
+    >
       <html lang="en">
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
         >
           <div className="absolute top-4 right-4 sm:top-6 sm:right-6 lg:top-8 lg:right-8 z-10">
             <SignedIn>
-              <UserButton />
+              <UserButton afterSignOutUrl="/admin/signin" />
             </SignedIn>
           </div>
           {children}
