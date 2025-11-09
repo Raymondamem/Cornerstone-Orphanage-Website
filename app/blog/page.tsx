@@ -1,7 +1,8 @@
-import { Button } from '@/components/ui/button'
-import { Card, CardContent } from '@/components/ui/card'
+'use client'
+
+import { Button } from '../../components/ui/button'
+import { Card, CardContent } from '../../components/ui/card'
 import { Navbar } from '../components/Navbar'
-import Image from 'next/image'
 
 // Mock blog data
 const latestPosts = [
@@ -207,9 +208,9 @@ export default function BlogPage() {
             {/* Navigation */}
             <nav className="flex flex-wrap items-center justify-center gap-6 sm:gap-8">
               <a href="/" className="text-[#0b1f33] hover:text-[#164672] font-medium">Home</a>
-              <a href="/about" className="text-[#0b1f33] hover:text-[#164672] font-medium">About</a>
-              <a href="/contact" className="text-[#0b1f33] hover:text-[#164672] font-medium">Contact us</a>
-              <a href="/gallery" className="text-[#0b1f33] hover:text-[#164672] font-medium">Gallery</a>
+              <a href="/#about" className="text-[#0b1f33] hover:text-[#164672] font-medium">About</a>
+              <a href="/#contact" className="text-[#0b1f33] hover:text-[#164672] font-medium">Contact us</a>
+              <a href="/blog" className="text-[#0b1f33] hover:text-[#164672] font-medium">Blog</a>
             </nav>
 
             {/* Social Icons */}

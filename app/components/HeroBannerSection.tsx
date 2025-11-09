@@ -1,14 +1,14 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '../../components/ui/button'
 import { Navbar } from './Navbar'
 
 export function HeroBannerSection() {
   return (
-    <section className="relative w-full bg-[#fffdf7]">
+    <section className="relative w-full bg-[#fffdf7] min-h-screen">
       <Navbar />
 
-      <div className="flex items-center justify-center px-4 sm:px-6 lg:px-4 py-10 sm:py-14 lg:py-20">
+      <div className="flex items-center justify-center px-4 sm:px-6 lg:px-4 py-8 sm:py-12 lg:py-20 min-h-[calc(100vh-120px)]">
         <div className="flex flex-col lg:flex-row w-full max-w-[1298px] items-center justify-between gap-6 sm:gap-8 lg:gap-8">
           <div className="flex flex-col w-full lg:max-w-[633px] items-start sm:items-start items-center gap-8 sm:gap-10 lg:gap-12">
             <div className="flex flex-col items-start sm:items-start items-center gap-4 sm:gap-6 w-full text-center sm:text-left">
@@ -33,7 +33,7 @@ export function HeroBannerSection() {
                 </span>
               </Button>
 
-              <Button className="h-auto flex-1 sm:w-auto inline-flex items-center justify-center gap-[13.02px] px-3 sm:px-6 lg:px-[31.25px] py-3 sm:py-4 lg:py-[20.83px] bg-[#164672] hover:bg-[#164672]/90 rounded-[59.89px] overflow-hidden">
+              <Button className="h-auto flex-1 sm:w-auto inline-flex items-center justify-center gap-[13.02px] px-3 sm:px-6 lg:px-[31.25px] py-3 sm:py-4 lg:px-[20.83px] bg-[#164672] hover:bg-[#164672]/90 rounded-[59.89px] overflow-hidden">
                 <span className="mt-[-2px] sm:mt-[-3.91px] text-sm sm:text-base lg:text-lg leading-normal relative w-fit [font-family:'Archivo',Helvetica] font-bold text-white tracking-[0] whitespace-nowrap">
                   Support a child today
                 </span>

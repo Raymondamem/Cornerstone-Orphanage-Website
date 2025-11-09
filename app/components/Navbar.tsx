@@ -1,15 +1,36 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '../../components/ui/button'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 const navigationItems = [
   { label: 'Home', href: '/' },
-  { label: 'About us', href: '/about' },
-  { label: 'Contact us', href: '/contact' },
+  { label: 'About us', href: '/#about' },
+  { label: 'Contact us', href: '/#contact' },
   { label: 'Blog', href: '/blog' },
 ]
+
+const scrollToSection = (sectionId: string) => {
+  const element = document.getElementById(sectionId)
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' })
+  }
+}
+
+const handleNavClick = (href: string, e: React.MouseEvent) => {
+  if (href.startsWith('/#')) {
+    e.preventDefault()
+    const sectionId = href.substring(2) // Remove '/#'
+    
+    // If we're not on the home page, navigate there first
+    if (window.location.pathname !== '/') {
+      window.location.href = href
+    } else {
+      scrollToSection(sectionId)
+    }
+  }
+}
 
 export function Navbar() {
   const pathname = usePathname()
@@ -56,11 +77,12 @@ export function Navbar() {
 
         <div className="inline-flex items-center gap-3 sm:gap-4 lg:gap-6">
           {navigationItems.map((item, index) => {
-            const isActive = pathname === item.href
+            const isActive = pathname === item.href || (pathname === '/' && item.href.startsWith('/#'))
             return (
               <Link
                 key={index}
                 href={item.href}
+                onClick={(e) => handleNavClick(item.href, e)}
                 className={`inline-flex items-center justify-center gap-[13.02px] p-2 sm:p-[13.02px] ${
                   isActive
                     ? 'border-b-[2px] sm:border-b-[3.91px] border-solid border-[#0a3d6d]'

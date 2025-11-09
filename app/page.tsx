@@ -5,22 +5,19 @@ import { MakeADifferenceSection } from './components/MakeADifferenceSection'
 import { ArticleOfTheDaySection } from './components/ArticleOfTheDaySection'
 import { CallToActionSection } from './components/CallToActionSection'
 import { ContactFooterSection } from './components/ContactFooterSection'
+import { AnimatedGallery } from './components/AnimatedGallery'
 
 export default function Home() {
   return (
     <div className="flex flex-col items-start w-full">
       <HeroBannerSection />
-      <AboutUsSection />
+      <div id="about">
+        <AboutUsSection />
+      </div>
       <ImpactMetricsSection />
       <MakeADifferenceSection />
 
-      <section className="w-full relative">
-        <img
-          className="w-full h-auto object-cover"
-          alt="Gallery"
-          src="/figmaAssets/gallery.svg"
-        />
-      </section>
+      <AnimatedGallery />
 
       <ArticleOfTheDaySection />
 
@@ -38,7 +35,9 @@ export default function Home() {
       </section>
 
       <CallToActionSection />
-      <ContactFooterSection />
+      <div id="contact">
+        <ContactFooterSection />
+      </div>
     </div>
   )
 }
