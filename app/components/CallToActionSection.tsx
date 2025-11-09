@@ -1,48 +1,84 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
+import { motion, useScroll, useTransform } from 'framer-motion'
+import { Button } from '../../components/ui/button'
+import { useRef } from 'react'
 
 export function CallToActionSection() {
-  return (
-    <section className="relative w-full h-[500px] sm:h-[600px] lg:h-[751px] bg-white">
-      <img
-        className="absolute inset-0 w-full h-full object-cover"
-        alt="Background"
-        src="/figmaAssets/image-9.png"
-      />
+  const ref = useRef<HTMLElement>(null)
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"]
+  })
 
-      <div className="absolute inset-0 bg-[#051a2e] opacity-80" />
+  const y = useTransform(scrollYProgress, [0, 1], [50, -50])
+
+  const scrollToContact = () => {
+    const element = document.getElementById('contact')
+    element?.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start'
+    })
+  }
+
+  return (
+    <section ref={ref} className="relative w-full h-[450px] sm:h-[550px] lg:h-[650px] bg-white overflow-hidden">
+      <motion.div style={{ y }} className="absolute inset-0">
+        <img
+          className="w-full h-full object-cover"
+          alt="Background"
+          src="/figmaAssets/image-9.png"
+        />
+      </motion.div>
+
+      <div className="absolute inset-0 bg-gradient-to-b from-[#051a2e]/80 to-[#051a2e]/90" />
 
       <div className="absolute inset-0 flex items-center justify-center px-4 sm:px-6">
-        <div className="flex flex-col items-center gap-10 sm:gap-12 lg:gap-[72px] max-w-[749px] w-full">
-          <div className="flex flex-col items-center gap-3 sm:gap-4 w-full">
-            <h2 className="text-3xl sm:text-5xl lg:text-7xl text-center leading-tight lg:leading-[83.5px] [font-family:'Archivo',Helvetica] font-bold text-white tracking-[0]">
+        <div className="flex flex-col items-center gap-8 sm:gap-10 lg:gap-12 max-w-4xl w-full">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
+            transition={{ duration: 0.7 }}
+            className="flex flex-col items-center gap-3 sm:gap-4 w-full"
+          >
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-center leading-tight font-[family-name:var(--font-archivo)] font-bold text-white text-balance">
               Support a child today
             </h2>
 
-            <p className="font-normal text-white text-base sm:text-xl lg:text-[28px] text-center leading-relaxed lg:leading-[35.3px] [font-family:'Archivo',Helvetica] tracking-[0]">
+            <p className="font-normal text-white text-base sm:text-lg lg:text-xl text-center leading-relaxed font-[family-name:var(--font-archivo)] max-w-3xl">
               Cornerstone Orphanage provides a safe and nurturing home where
               children are empowered to dream, learn, and discover their
               purpose.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
-            <Button
-              variant="outline"
-              className="h-auto w-full sm:w-auto px-4 sm:px-6 lg:px-[31.25px] py-3 sm:py-4 lg:py-[20.83px] rounded-[59.89px] border-2 border-white bg-transparent hover:bg-white/10"
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4"
+          >
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={scrollToContact}
+              className="w-full sm:w-auto px-6 sm:px-7 lg:px-8 py-3 sm:py-3.5 rounded-full border-2 border-white bg-transparent hover:bg-white/10 transition-all duration-300"
             >
-              <span className="text-base sm:text-lg lg:text-2xl [font-family:'Archivo',Helvetica] font-bold text-white tracking-[0] leading-normal whitespace-nowrap">
+              <span className="text-sm sm:text-base lg:text-lg font-[family-name:var(--font-archivo)] font-bold text-white whitespace-nowrap">
                 Join our mission
               </span>
-            </Button>
+            </motion.button>
 
-            <Button className="h-auto w-full sm:w-auto px-4 sm:px-6 lg:px-[31.25px] py-3 sm:py-4 lg:py-[20.83px] bg-[#164672] rounded-[59.89px] hover:bg-[#164672]/90">
-              <span className="text-base sm:text-lg lg:text-2xl [font-family:'Archivo',Helvetica] font-bold text-white tracking-[0] leading-normal whitespace-nowrap">
-                Support a child today
-              </span>
-            </Button>
-          </div>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button className="w-full sm:w-auto px-6 sm:px-7 lg:px-8 py-3 sm:py-3.5 bg-[#164672] rounded-full hover:bg-[#164672]/90 shadow-lg hover:shadow-xl transition-all duration-300">
+                <span className="text-sm sm:text-base lg:text-lg font-[family-name:var(--font-archivo)] font-bold text-white whitespace-nowrap">
+                  Support a child today
+                </span>
+              </Button>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>
