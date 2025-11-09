@@ -1,12 +1,12 @@
-'use client'
+"use client";
 
-import { Button } from '@/components/ui/button'
+import { Button } from "@/components/ui/button";
 
 const navigationItems = [
-  { label: 'Home', active: true },
-  { label: 'About us', active: false },
-  { label: 'Contact us', active: false },
-]
+  { label: "Home", active: true },
+  { label: "About us", active: false },
+  { label: "Contact us", active: false },
+];
 
 export function HeroBannerSection() {
   return (
@@ -24,7 +24,7 @@ export function HeroBannerSection() {
               Cornerstone Orphanage
             </div>
           </div>
-          
+
           {/* Hamburger Menu */}
           <button className="flex flex-col gap-1 p-2">
             <div className="w-6 h-0.5 bg-black"></div>
@@ -54,17 +54,17 @@ export function HeroBannerSection() {
                 key={index}
                 className={`inline-flex items-center justify-center gap-[13.02px] p-2 sm:p-[13.02px] ${
                   item.active
-                    ? 'border-b-[2px] sm:border-b-[3.91px] border-solid border-[#0a3d6d]'
-                    : ''
+                    ? "border-b-[2px] sm:border-b-[3.91px] border-solid border-[#0a3d6d]"
+                    : ""
                 }`}
               >
                 <div
                   className={`relative w-fit ${
-                    item.active ? 'mt-[-2px] sm:mt-[-3.91px]' : ''
+                    item.active ? "mt-[-2px] sm:mt-[-3.91px]" : ""
                   } [font-family:'Archivo',Helvetica] ${
                     item.active
-                      ? 'font-bold text-[#0a3d6e] text-base sm:text-lg lg:text-2xl'
-                      : 'font-medium text-[#0b1f33] text-sm sm:text-base lg:text-lg'
+                      ? "font-bold text-[#0a3d6e] text-base sm:text-lg lg:text-2xl"
+                      : "font-medium text-[#0b1f33] text-sm sm:text-base lg:text-lg"
                   } tracking-[0] leading-normal whitespace-nowrap`}
                 >
                   {item.label}
@@ -133,5 +133,5 @@ export function HeroBannerSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
