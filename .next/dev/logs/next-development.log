@@ -1,11 +1,4 @@
-[00:00:23.614] Server  LOG      ○ Compiling middleware ...
-[00:00:28.605] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:31.747] Server  LOG      ✓ Ready in 24.6s
-[00:04:31.575] Server  LOG      ○ Compiling / ...
-[00:07:29.531] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:33.470] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:43:43.455] Server  LOG        Reload env: .env
-[00:45:22.696] Server  LOG        Reload env: .env
-[00:47:06.412] Server  LOG        Reload env: .env
-[00:55:23.818] Server  LOG        Reload env: .env
-[01:00:50.040] Server  LOG        Reload env: .env
+[00:00:31.732] Server  LOG      ○ Compiling middleware ...
+[00:00:33.684] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:37.682] Server  LOG      ✓ Ready in 24.5s
+[00:01:56.839] Server  LOG      ○ Compiling / ...
