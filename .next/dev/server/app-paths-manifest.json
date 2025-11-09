@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 {}
+=======
+{
+  "/blog/page": "app/blog/page.js",
+  "/page": "app/page.js"
+}
+>>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
