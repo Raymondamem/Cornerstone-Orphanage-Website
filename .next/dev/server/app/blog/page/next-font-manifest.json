@@ -2,13 +2,7 @@
   "pages": {},
   "app": {
     "[project]/app/blog/page": [
-<<<<<<< HEAD
-      "static/media/caa3a2e1cccd8315-s.p.853070df.woff2",
-      "static/media/797e433ab948586e-s.p.dbea232f.woff2"
-=======
-      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
-      "static/media/75affa71d1e2f6a7-s.p.51cde8ff.woff2"
->>>>>>> e35fc6f7991f46901ff13dace344b32f4c7e322c
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     ]
   },
   "appUsingSizeAdjust": true,

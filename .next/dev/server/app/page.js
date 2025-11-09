@@ -4,13 +4,9 @@ R.c("server/chunks/ssr/[root-of-the-server]__f0fb2381._.js")
 R.c("server/chunks/ssr/node_modules_next_dist_b704424f._.js")
 R.c("server/chunks/ssr/[root-of-the-server]__7f148858._.js")
 R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_global-error_ece394eb.js")
-<<<<<<< HEAD
 R.c("server/chunks/ssr/node_modules_1656975b._.js")
 R.c("server/chunks/ssr/node_modules_2ba7d1e7._.js")
 R.c("server/chunks/ssr/[root-of-the-server]__1ace2917._.js")
-=======
-R.c("server/chunks/ssr/[root-of-the-server]__8294aa86._.js")
->>>>>>> e35fc6f7991f46901ff13dace344b32f4c7e322c
 R.c("server/chunks/ssr/node_modules_next_dist_client_components_9774470f._.js")
 R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_forbidden_45780354.js")
 R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_unauthorized_15817684.js")

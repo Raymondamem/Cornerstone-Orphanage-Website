@@ -1,18 +1,7 @@
 {
   "app": {
-<<<<<<< HEAD
-    "[project]/app/admin/blogs/new/page": [],
     "[project]/app/page": [
       "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
-=======
-    "[project]/app/blog/page": [
-      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
-      "static/media/75affa71d1e2f6a7-s.p.51cde8ff.woff2"
-    ],
-    "[project]/app/page": [
-      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
-      "static/media/75affa71d1e2f6a7-s.p.51cde8ff.woff2"
->>>>>>> e35fc6f7991f46901ff13dace344b32f4c7e322c
     ]
   },
   "appUsingSizeAdjust": true,

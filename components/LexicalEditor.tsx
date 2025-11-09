@@ -20,6 +20,9 @@ interface LexicalEditorProps {
 export default function LexicalEditor({ initialContent, onChange, onImageUpload }: LexicalEditorProps) {
   const [isUploading, setIsUploading] = useState(false)
 
+  // Only pass an editorState when we actually have valid JSON; otherwise let Lexical use defaults
+  const safeEditorState = initialContent && initialContent.trim().length > 0 ? initialContent : undefined
+
   const initialConfig = {
     namespace: 'BlogEditor',
     theme: {
@@ -33,7 +36,7 @@ export default function LexicalEditor({ initialContent, onChange, onImageUpload 
     onError: (error: Error) => {
       console.error(error)
     },
-    editorState: initialContent,
+    editorState: safeEditorState,
   }
 
   const handleEditorChange = (editorState: EditorState) => {

@@ -1,18 +1,18 @@
 "use client";
 
-<<<<<<< HEAD
-import { Button } from "@/components/ui/button";
-
-const navigationItems = [
-  { label: "Home", active: true },
-  { label: "About us", active: false },
-  { label: "Contact us", active: false },
-];
-=======
+import { useEffect, useMemo, useState } from 'react'
+import { SignedIn } from '@clerk/nextjs'
 import { motion } from 'framer-motion'
 import { Button } from '../../components/ui/button'
 import { Navbar } from './Navbar'
->>>>>>> e35fc6f7991f46901ff13dace344b32f4c7e322c
+import LexicalEditor from '@/components/LexicalEditor'
+import { uploadToCloudinary } from '@/lib/cloudinary'
+
+type HomepageSettings = {
+  titleText: string
+  titleContent: string
+  imageUrl: string
+}
 
 export function HeroBannerSection() {
   const scrollToContact = () => {
@@ -23,93 +23,79 @@ export function HeroBannerSection() {
     })
   }
 
+  const [settings, setSettings] = useState<HomepageSettings | null>(null)
+  const [loading, setLoading] = useState(true)
+  const [editing, setEditing] = useState(false)
+  const [draftTitleContent, setDraftTitleContent] = useState('')
+  const [draftTitleText, setDraftTitleText] = useState('')
+  const [draftImage, setDraftImage] = useState<string | undefined>(undefined)
+  const defaultTitle = 'Every Child Deserves Love, Family, and a Future Filled with Hope'
+  const defaultImage = '/figmaAssets/group-2.png'
+
+  useEffect(() => {
+    const run = async () => {
+      try {
+        const res = await fetch('/api/settings/homepage', { cache: 'no-store' })
+        if (res.ok) {
+          const data = await res.json()
+          setSettings({
+            titleText: data.titleText ?? defaultTitle,
+            titleContent: data.titleContent ?? '',
+            imageUrl: data.imageUrl ?? defaultImage,
+          })
+        } else {
+          setSettings({ titleText: defaultTitle, titleContent: '', imageUrl: defaultImage })
+        }
+      } catch {
+        setSettings({ titleText: defaultTitle, titleContent: '', imageUrl: defaultImage })
+      } finally {
+        setLoading(false)
+      }
+    }
+    run()
+  }, [])
+
+  const startEdit = () => {
+    setEditing(true)
+    setDraftTitleContent(settings?.titleContent ?? '')
+    setDraftTitleText(settings?.titleText ?? defaultTitle)
+    setDraftImage(settings?.imageUrl)
+  }
+
+  const save = async () => {
+    try {
+      const res = await fetch('/api/settings/homepage', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          titleText: draftTitleText,
+          titleContent: draftTitleContent,
+          imageUrl: draftImage,
+        }),
+      })
+      if (!res.ok) throw new Error('Failed to save settings')
+      const data = await res.json()
+      setSettings({
+        titleText: data.titleText,
+        titleContent: data.titleContent,
+        imageUrl: data.imageUrl,
+      })
+      setEditing(false)
+      alert('Homepage banner updated')
+    } catch (e) {
+      console.error(e)
+      alert('Failed to save')
+    }
+  }
+
+  const uploadNewImage = async (file: File) => {
+    const url = await uploadToCloudinary(file)
+    setDraftImage(url)
+  }
+
   return (
-<<<<<<< HEAD
-    <section className="relative w-full bg-[#fffdf7]">
-      <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
-        {/* Mobile Header */}
-        <div className="flex sm:hidden items-center justify-between w-full px-2 ">
-          <div className="flex items-center gap-2">
-            <img
-              className="w-8 h-8 rounded-full object-cover"
-              alt="Cornerstone Orphanage Logo"
-              src="/figmaAssets/image-11-1.png"
-            />
-            <div className="text-lg font-bold text-black [font-family:'Inter',Helvetica]">
-              Cornerstone Orphanage
-            </div>
-          </div>
-
-          {/* Hamburger Menu */}
-          <button className="flex flex-col gap-1 p-2">
-            <div className="w-6 h-0.5 bg-black"></div>
-            <div className="w-6 h-0.5 bg-black"></div>
-            <div className="w-6 h-0.5 bg-black"></div>
-          </button>
-        </div>
-
-        {/* Desktop Header */}
-        <nav className="hidden sm:flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-8 lg:gap-24 px-4 sm:px-[15.62px] py-3 sm:py-[13.02px] bg-[#fffaef] rounded-[104.16px] w-full max-w-6xl">
-          <div className="inline-flex items-center justify-center gap-[13.02px] rounded-[59.89px]">
-            <div className="inline-flex items-center gap-1">
-              <img
-                className="relative w-8 h-8 sm:w-10 sm:h-10 rounded-[456px] object-cover"
-                alt="Cornerstone Orphanage Logo"
-                src="/figmaAssets/image-11-1.png"
-              />
-              <div className="w-fit text-base sm:text-lg lg:text-[22px] [font-family:'Inter',Helvetica] font-bold text-black leading-normal tracking-[0]">
-                Cornerstone Orphanage
-              </div>
-            </div>
-          </div>
-
-          <div className="inline-flex items-center gap-3 sm:gap-4 lg:gap-6">
-            {navigationItems.map((item, index) => (
-              <button
-                key={index}
-                className={`inline-flex items-center justify-center gap-[13.02px] p-2 sm:p-[13.02px] ${
-                  item.active
-                    ? "border-b-[2px] sm:border-b-[3.91px] border-solid border-[#0a3d6d]"
-                    : ""
-                }`}
-              >
-                <div
-                  className={`relative w-fit ${
-                    item.active ? "mt-[-2px] sm:mt-[-3.91px]" : ""
-                  } [font-family:'Archivo',Helvetica] ${
-                    item.active
-                      ? "font-bold text-[#0a3d6e] text-base sm:text-lg lg:text-2xl"
-                      : "font-medium text-[#0b1f33] text-sm sm:text-base lg:text-lg"
-                  } tracking-[0] leading-normal whitespace-nowrap`}
-                >
-                  {item.label}
-                </div>
-              </button>
-            ))}
-          </div>
-
-          <div className="inline-flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
-            <Button
-              variant="outline"
-              className="h-auto inline-flex items-center justify-center gap-[13.02px] px-4 sm:px-6 lg:px-[31.25px] py-3 sm:py-4 lg:py-[20.83px] rounded-[59.89px] overflow-hidden border-2 border-solid border-[#164672] bg-transparent hover:bg-transparent"
-            >
-              <span className="relative w-fit mt-[-2.00px] [font-family:'Archivo',Helvetica] font-bold text-[#164672] text-sm sm:text-base lg:text-lg tracking-[0] leading-normal whitespace-nowrap">
-                Join our mission
-              </span>
-            </Button>
-
-            <Button className="h-auto inline-flex items-center justify-center gap-[13.02px] px-4 sm:px-6 lg:px-[31.25px] py-3 sm:py-4 lg:py-[20.83px] bg-[#164672] hover:bg-[#164672]/90 rounded-[59.89px] overflow-hidden">
-              <span className="relative w-fit mt-[-2px] sm:mt-[-3.91px] [font-family:'Archivo',Helvetica] font-bold text-white text-sm sm:text-base lg:text-lg tracking-[0] leading-normal whitespace-nowrap">
-                Support a child today
-              </span>
-            </Button>
-          </div>
-        </nav>
-      </header>
-=======
     <section className="relative w-full bg-[#fffdf7] min-h-screen">
       <Navbar />
->>>>>>> e35fc6f7991f46901ff13dace344b32f4c7e322c
 
       <div className="flex items-center justify-center px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 min-h-[calc(100vh-120px)]">
         <div className="flex flex-col lg:flex-row w-full max-w-7xl items-center justify-between gap-8 sm:gap-10 lg:gap-16">
@@ -126,8 +112,61 @@ export function HeroBannerSection() {
                 transition={{ duration: 0.7, delay: 0.2 }}
                 className="w-full font-[family-name:var(--font-archivo)] font-bold text-[#0b1f33] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-balance"
               >
-                Every Child Deserves Love, Family, and a Future Filled with Hope
+                {settings?.titleText ?? defaultTitle}
               </motion.h1>
+
+              <SignedIn>
+                <div className="w-full mt-3 flex items-center gap-3">
+                  {!editing ? (
+                    <Button variant="outline" onClick={startEdit}>Edit banner</Button>
+                  ) : (
+                    <div className="w-full space-y-3">
+                      <div>
+                        <label className="block text-sm font-medium mb-1">Title editor</label>
+                        <LexicalEditor
+                          initialContent={draftTitleContent}
+                          onChange={(content) => setDraftTitleContent(content)}
+                          onImageUpload={() => {}}
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium mb-1">Plain title text (displayed)</label>
+                        <input
+                          className="w-full border rounded px-3 py-2"
+                          value={draftTitleText}
+                          onChange={(e) => setDraftTitleText(e.target.value)}
+                          placeholder="Banner title"
+                        />
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <label className="block text-sm font-medium">Banner image</label>
+                        <input
+                          type="file"
+                          accept="image/*"
+                          onChange={async (e) => {
+                            const f = e.target.files?.[0]
+                            if (f) {
+                              try {
+                                const url = await uploadToCloudinary(f)
+                                setDraftImage(url)
+                              } catch (err) {
+                                alert('Image upload failed')
+                              }
+                            }
+                          }}
+                        />
+                        {draftImage && (
+                          <img src={draftImage} className="w-20 h-20 object-cover rounded" alt="preview" />
+                        )}
+                      </div>
+                      <div className="flex gap-2">
+                        <Button onClick={save}>Save</Button>
+                        <Button variant="outline" onClick={() => setEditing(false)}>Cancel</Button>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </SignedIn>
 
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -179,7 +218,7 @@ export function HeroBannerSection() {
                 transition={{ duration: 0.3 }}
                 className="w-full h-auto rounded-2xl shadow-2xl"
                 alt="Children at Cornerstone Orphanage"
-                src="/figmaAssets/group-2.png"
+                src={settings?.imageUrl ?? defaultImage}
               />
             </motion.div>
           </motion.div>
@@ -196,7 +235,7 @@ export function HeroBannerSection() {
               transition={{ duration: 0.3 }}
               className="w-full h-auto rounded-2xl shadow-2xl"
               alt="Children at Cornerstone Orphanage"
-              src="/figmaAssets/group-2.png"
+              src={settings?.imageUrl ?? defaultImage}
             />
           </motion.div>
         </div>

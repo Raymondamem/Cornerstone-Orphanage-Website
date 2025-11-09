@@ -37,7 +37,7 @@ export default function Home() {
 
       <CallToActionSection />
       <ContactForm />
-      <div id="contact">
+      <div id="contact" className="w-full">
         <ContactFooterSection />
       </div>
     </div>
