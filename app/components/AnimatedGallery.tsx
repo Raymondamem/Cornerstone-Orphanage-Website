@@ -9,9 +9,6 @@ const galleryImages = [
   '/figmaAssets/image-10.png',
   '/figmaAssets/group-2.png',
   '/figmaAssets/image-11-1.png',
-  '/figmaAssets/image-3.png', // Duplicate for seamless loop
-  '/figmaAssets/image-9.png',
-  '/figmaAssets/image-10.png',
 ]
 
 export function AnimatedGallery() {
@@ -23,74 +20,77 @@ export function AnimatedGallery() {
 
   if (!mounted) return null
 
-  const topRowImages = galleryImages.slice(0, 4)
-  const bottomRowImages = galleryImages.slice(4)
+  // Create extended arrays for seamless looping
+  const topRowImages = [...galleryImages, ...galleryImages, ...galleryImages]
+  const bottomRowImages = [...galleryImages.reverse(), ...galleryImages, ...galleryImages]
 
   return (
-    <section className="w-full relative overflow-hidden py-8 sm:py-12 lg:py-16 bg-gradient-to-b from-[#fffdf7] to-white">
-      <div className="w-full">
+    <section className="w-full relative overflow-hidden py-8 sm:py-12 lg:py-16 bg-gradient-to-b from-[#fffdf7] via-[#fffbf5] to-white">
+      <div className="w-full space-y-4 sm:space-y-6">
         {/* Top row - moving left */}
-        <div className="relative h-24 sm:h-32 lg:h-40 mb-4 sm:mb-6 lg:mb-8 overflow-hidden">
+        <div className="relative h-32 sm:h-40 lg:h-48 overflow-hidden">
           <motion.div
-            className="flex gap-4 sm:gap-6 lg:gap-8 absolute top-0"
+            className="flex gap-4 sm:gap-6 absolute top-0 left-0"
             animate={{
-              x: [0, -1000]
+              x: ['0%', '-33.33%']
             }}
             transition={{
-              duration: 20,
+              duration: 30,
               repeat: Infinity,
               ease: "linear"
             }}
-            style={{ width: 'calc(200% + 100px)' }}
           >
-            {[...topRowImages, ...topRowImages, ...topRowImages].map((image, index) => (
-              <div
+            {topRowImages.map((image, index) => (
+              <motion.div
                 key={index}
-                className="flex-shrink-0 w-24 sm:w-32 lg:w-40 h-24 sm:h-32 lg:h-40 rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+                whileHover={{ scale: 1.05, zIndex: 10 }}
+                className="flex-shrink-0 w-32 sm:w-40 lg:w-48 h-32 sm:h-40 lg:h-48 rounded-xl lg:rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
               >
                 <img
                   src={image}
                   alt={`Gallery image ${index + 1}`}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
                 />
-              </div>
+              </motion.div>
             ))}
           </motion.div>
         </div>
 
         {/* Bottom row - moving right */}
-        <div className="relative h-24 sm:h-32 lg:h-40 overflow-hidden">
+        <div className="relative h-32 sm:h-40 lg:h-48 overflow-hidden">
           <motion.div
-            className="flex gap-4 sm:gap-6 lg:gap-8 absolute top-0"
+            className="flex gap-4 sm:gap-6 absolute top-0 left-0"
             animate={{
-              x: [-1000, 0]
+              x: ['-33.33%', '0%']
             }}
             transition={{
-              duration: 20,
+              duration: 30,
               repeat: Infinity,
               ease: "linear"
             }}
-            style={{ width: 'calc(200% + 100px)' }}
           >
-            {[...bottomRowImages, ...bottomRowImages, ...bottomRowImages].map((image, index) => (
-              <div
+            {bottomRowImages.map((image, index) => (
+              <motion.div
                 key={index}
-                className="flex-shrink-0 w-24 sm:w-32 lg:w-40 h-24 sm:h-32 lg:h-40 rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+                whileHover={{ scale: 1.05, zIndex: 10 }}
+                className="flex-shrink-0 w-32 sm:w-40 lg:w-48 h-32 sm:h-40 lg:h-48 rounded-xl lg:rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
               >
                 <img
                   src={image}
                   alt={`Gallery image ${index + 1}`}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
                 />
-              </div>
+              </motion.div>
             ))}
           </motion.div>
         </div>
       </div>
 
       {/* Gradient overlays for seamless edges */}
-      <div className="absolute top-0 left-0 w-20 sm:w-32 h-full bg-gradient-to-r from-[#fffdf7] to-transparent z-10 pointer-events-none"></div>
-      <div className="absolute top-0 right-0 w-20 sm:w-32 h-full bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+      <div className="absolute top-0 left-0 w-16 sm:w-24 lg:w-32 h-full bg-gradient-to-r from-[#fffdf7] via-[#fffdf7]/80 to-transparent z-10 pointer-events-none"></div>
+      <div className="absolute top-0 right-0 w-16 sm:w-24 lg:w-32 h-full bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
     </section>
   )
 }
