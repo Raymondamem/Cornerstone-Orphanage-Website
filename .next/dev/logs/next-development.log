@@ -9,3 +9,3300 @@
 [00:03:19.667] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [00:03:22.553] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+[00:03:48.489] Server  ERROR    ⨯ ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:03:48.575] Server  LOG      ✓ Compiled in 4.3s
+[00:03:50.275] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:03:50.275] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:03:51.552] Server  LOG      ○ Compiling /_error ...
+[00:03:55.878] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:03:55.878] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:03:57.394] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:03:57.394] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:01.349] Server  ERROR   ModuleBuildError: ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:01.862] Server  ERROR   SyntaxError: Expected property name or '}' in JSON at position 96 (line 7 column 1)
+[00:04:02.005] Server  ERROR    ⨯ ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:02.374] Server  ERROR   ModuleBuildError: ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:02.515] Server  ERROR   SyntaxError: Expected property name or '}' in JSON at position 96 (line 7 column 1)
+[00:04:02.634] Server  ERROR    ⨯ ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:02.760] Server  ERROR   ModuleBuildError: ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:02.846] Server  ERROR   SyntaxError: Expected property name or '}' in JSON at position 96 (line 7 column 1)
+[00:04:02.956] Server  ERROR    ⨯ ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:03.082] Server  ERROR   ModuleBuildError: ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:03.174] Server  ERROR   SyntaxError: Expected property name or '}' in JSON at position 96 (line 7 column 1)
+[00:04:03.315] Server  ERROR    ⨯ ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:03.433] Server  ERROR   ModuleBuildError: ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:03.523] Server  ERROR   SyntaxError: Expected property name or '}' in JSON at position 96 (line 7 column 1)
+[00:04:03.646] Server  ERROR    ⨯ ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:03.747] Server  ERROR   ModuleBuildError: ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:03.828] Server  ERROR   SyntaxError: Expected property name or '}' in JSON at position 96 (line 7 column 1)
+[00:04:04.061] Server  ERROR    ⨯ ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:04.377] Server  ERROR   ModuleBuildError: ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:04.460] Server  ERROR   SyntaxError: Expected property name or '}' in JSON at position 96 (line 7 column 1)
+[00:04:04.562] Server  ERROR    ⨯ ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:04.693] Server  ERROR   ModuleBuildError: ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:04.770] Server  ERROR   SyntaxError: Expected property name or '}' in JSON at position 96 (line 7 column 1)
+[00:04:04.896] Server  ERROR    ⨯ ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:05.022] Server  ERROR   ModuleBuildError: ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:05.089] Server  ERROR   SyntaxError: Expected property name or '}' in JSON at position 96 (line 7 column 1)
+[00:04:05.177] Server  ERROR    ⨯ ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:05.287] Server  ERROR   ModuleBuildError: ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:05.370] Server  ERROR   SyntaxError: Expected property name or '}' in JSON at position 96 (line 7 column 1)
+[00:04:05.398] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.398] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.398] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.398] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.398] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.398] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.398] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.398] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.398] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.400] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.401] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.401] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.401] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.401] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.401] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.401] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.401] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.401] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.401] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.401] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.401] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.401] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.401] Browser ERROR   ./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.401] Browser ERROR   ./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+[00:04:05.505] Server  ERROR    ⨯ ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:05.612] Server  ERROR   ModuleBuildError: ./app/components/HeroBannerSection.tsx:19:2
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |  ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:19:4
+Parsing ecmascript source code failed
+  17 |   return (
+  18 |     <section className="relative w-full bg-[#fffdf7]">
+> 19 | <<<<<<< HEAD
+     |    ^^
+  20 |       <header className="flex items-center justify-center px-4 sm:px-6 lg:px-4 pt-6 sm:pt-10 lg:pt-14 pb-0">
+  21 |         {/* Mobile Header */}
+  22 |         <div className="flex sm:hidden items-center justify-between w-full px-2 ">
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 |
+> 3 | <<<<<<< HEAD
+    | ^^^^^^^
+  4 | import { Button } from "@/components/ui/button";
+  5 |
+  6 | const navigationItems = [
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:11:1
+Parsing ecmascript source code failed
+   9 |   { label: "Contact us", active: false },
+  10 | ];
+> 11 | =======
+     | ^^^^^^^
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+  14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+
+./app/components/HeroBannerSection.tsx:14:1
+Parsing ecmascript source code failed
+  12 | import { Button } from '@/components/ui/button'
+  13 | import { Navbar } from './Navbar'
+> 14 | >>>>>>> 501d123f9a99dbe5ceaa084b0b361d6fc929dd3b
+     | ^^^^^^^
+  15 |
+  16 | export function HeroBannerSection() {
+  17 |   return (
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./app/components/HeroBannerSection.tsx
+    ./app/page.tsx
+
+
+[00:04:05.692] Server  ERROR   SyntaxError: Expected property name or '}' in JSON at position 96 (line 7 column 1)
