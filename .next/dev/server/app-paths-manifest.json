@@ -1,4 +1,7 @@
 {
+  "/admin/blogs/page": "app/admin/blogs/page.js",
+  "/admin/signin/[[...rest]]/page": "app/admin/signin/[[...rest]]/page.js",
+  "/api/blogs/route": "app/api/blogs/route.js",
   "/api/settings/homepage/route": "app/api/settings/homepage/route.js",
   "/page": "app/page.js"
 }
