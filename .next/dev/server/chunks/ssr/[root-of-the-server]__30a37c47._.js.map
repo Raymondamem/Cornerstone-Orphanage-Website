@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///home/raymond-amem-aondoakura/Documents/softwares_I/web2_I/Cornerstone-Orphanage-Website/app/admin/signin/%5B%5B...rest%5D%5D/page.tsx"],"sourcesContent":["import { SignIn } from '@clerk/nextjs'\n\nexport default function AdminSignInCatchAll() {\n  return (\n    <div className=\"min-h-screen flex items-center justify-center bg-gray-50\">\n      <SignIn\n        appearance={{\n          elements: {\n            rootBox: 'mx-auto',\n            card: 'shadow-md',\n          },\n        }}\n        routing=\"path\"\n        path=\"/admin/signin\"\n        signUpUrl=\"/admin/signin\"\n      />\n    </div>\n  )\n}\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC,gMAAM;YACL,YAAY;gBACV,UAAU;oBACR,SAAS;oBACT,MAAM;gBACR;YACF;YACA,SAAQ;YACR,MAAK;YACL,WAAU;;;;;;;;;;;AAIlB","debugId":null}}]
-}
